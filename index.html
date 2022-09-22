@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Ishidaw">
     <meta description="Front-end project web-site">
@@ -13,48 +12,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="topnav-container">
-        <nav class="topnav">
-            <img src="./images/logos/logo.png" alt="Ishidaw" class="topnav-logo">
-            <ul class="topnav-menu">
-                <li class="topnav-item"><a href="index.html" class="topnav-link">HOME</a></li>
-                <li class="topnav-item"><a href="#" class="topnav-link">GUIDES</a></li>
-                <li class="topnav-item"><a href="#" class="topnav-link">DOWNLOADS</a></li>
-                <li class="topnav-item"><a href="#" class="topnav-link">ABOUT</a></li>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">ISHIDAW</a>
+            <ul class="nav-container">
+                <li class="nav-item">
+                    <a href="#" class="links">GUIDES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="links">REVIEW</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="links">DOWNLOADS</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        <section class="box-1">
-            <h1>STUFFS YOU WILL FIND HERE</h1>
-            <p>Here you will find a <span class="highlight">large variety of game, tweaks and even mods stuffs.</span> This website is a front-end project to learn how to do and how to build website and keep it work. I know it's a simple project, but I will learn something with it. <span class="highlight">Fell free to comment on </span><span class="orange-highlight"><a href="https://github.com/Ishidawg/ishidawproject" target="blank">github page</a></span>.</p>
-        </section>
-        <hr class="division">
-        <section class="box-2">
-            <h1>YOUTUBE CHANNEL</h1>
-            <p><span class="highlight">I have a youtube channel</span>, where I upload some content about video games, not all I played and want to play, but some games like: <span class="highlight">Dark Souls, The Witcher, Dragons Dogma, Star Wars: Jedi Fallen Order and related.</span></p>
-            <div class="btn-box-2">
-                <a href="https://www.youtube.com/channel/UCZ9T9OwOAS2Zl7ENTGkKNQA?sub_confirmation=1" target="blank">SUBSCRIPTION</a>
-            </div>
-        </section>
-        <aside class="aside-box-2">
-            <div id="img-container-box-2">
-                <a href="https://www.youtube.com/channel/UCZ9T9OwOAS2Zl7ENTGkKNQA" target="blank" class="channel-link"><img src="./images/logos/channel-logo.png" alt="Ishidaw-channel" class="img-setting"></a>
-            </div>
-        </aside>
-        <footer class="box-3-left">
-            <section class="summary-section">
-                <p class="footer-title">Summary</p>
-                <ul class="footer-list">
-                    <li class="footer-item"><a href="#">Guides</a></li>
-                    <li class="footer-item"><a href="#">Downloads</a></li>
-                    <li class="footer-item"><a href="#">About</a></li>
-                </ul>
-            </section>
-        </footer>
-        <footer class="box-3-right">            
-            <img src="./images/logos/logo.png" class="footer-img"alt="Channel-logo">
-        </footer>
+        <article class="article space">
+            <h1 class="main-title">What you will find here?</h1>
+            <p class="text">Here you will find a <span class="white-mark">large variety of game, tweaks and even mods stuffs.</span> This website is a front-end project to learn how to do and how to build website and keep it work. I know it's a simple project, but I will learn something with it. <span class="white-mark">Fell free to comment on </span><a class="github" href="">github page</a>.</p>
+        </article>
+        <article class="article">
+            <h1 class="main-title">Youtube and Twitch</h1>
+            <p class="text"><span class="white-mark">I have a youtube and twitch channel, where I upload some content about video games</span>, not all I played and want to play, but some games like: <span class="white-mark">Dark Souls, The Witcher, Dragons Dogma, Star Wars: Jedi Fallen Order and related</span>.</p>
+        </article>
+        <div class="btn-box">
+            <a href="https://www.youtube.com/channel/UCZ9T9OwOAS2Zl7ENTGkKNQA" target="_blank" class="btn yt-button">YOUTUBE</a>
+        </div>
+        <div class="btn-box">
+            <a href="https://www.twitch.tv/ishidaw" target="_blank" class="btn twitch-button">TWITCH</a>
+        </div>
     </main>
 </body>
 </html>
