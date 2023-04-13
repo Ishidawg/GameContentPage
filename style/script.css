@@ -44,6 +44,16 @@ body {
     line-height: 1.4em;
 }
 
+.git-link {
+    text-decoration: underline 0.02em rgba(241, 216, 72, 0);
+    color: #f1d848;
+    transition: text-decoration-color 0.4s;
+}
+
+.git-link:hover {
+    text-decoration-color: rgb(241, 216, 72);
+}
+
 .home-icons {
     display: flex;
     flex-direction: row;

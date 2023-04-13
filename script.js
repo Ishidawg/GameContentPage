@@ -18,9 +18,9 @@ function renderLoad() {
                 <article class="home-text-box">
                     <h1>Ishidaw Vault</h1>
                     <p>
-                        This site have some purpose: Learn web dev and share my stuff</br>
+                        <strong>This site have some porpuse:</strong> Learn web dev and share my stuff</br>
                         Feel free to use it!</br>
-                        Help if you can on github!
+                        Help if you can on <a href="https://github.com/Ishidawg/GameContentPage" class="git-link">Github!</a>
                     </p>
                 </article>
                 <section class="home-icons">
@@ -54,9 +54,9 @@ home.addEventListener("click", () => {
                 <article class="home-text-box">
                     <h1>Ishidaw Vault</h1>
                     <p>
-                        This site have some porpuse: Learn web dev and share my stuff</br>
+                        <strong>This site have some porpuse:</strong> Learn web dev and share my stuff</br>
                         Feel free to use it!</br>
-                        Help if you can on github!
+                        Help if you can on <a href="https://github.com/Ishidawg/GameContentPage" class="git-link">Github!</a>
                     </p>
                 </article>
                 <section class="home-icons">
