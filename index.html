@@ -3,44 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Ishidaw">
-    <meta description="Front-end project web-site">
-    <meta keywords="games, github page, front-end, project, tweaks, game tweaks">
-    <title>Ishidaw</title>
-
-    <!--Links-->
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Ishidaw">
+    <title>Ishidaw Vault</title>
+    <link rel="icon" type="image/x-icon" href="./image/settings.svg">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script.js" defer></script>
 </head>
-<body>
+<body onload="renderLoad()">
     <header class="header">
         <nav class="nav">
-            <a href="#" class="nav-logo">ISHIDAW</a>
-            <ul class="nav-container">
-                <li class="nav-item">
-                    <a href="#" class="links">GUIDES</a>
+            <ul>
+                <li>
+                    <button class="nav-btn" id="home">
+                        <img src="./image/home.svg">
+                        <span>Home</span>
+                    </button>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="links">REVIEW</a>
+                <li>
+                    <button class="nav-btn tweaks" id="tweaks">
+                        <img src="./image/settings.svg">
+                        <span>Tweaks</span>
+                    </button>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="links">DOWNLOADS</a>
+                <li>
+                    <button class="nav-btn mods" id="mods">
+                        <img src="./image/tool.svg">
+                        <span>Mods</span>
+                    </button>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <article class="article space">
-            <h1 class="main-title">What you will find here?</h1>
-            <p class="text">Here you will find a <span class="white-mark">large variety of game, tweaks and even mods stuffs.</span> This website is a front-end project to learn how to do and how to build website and keep it work. I know it's a simple project, but I will learn something with it. <span class="white-mark">Fell free to comment on </span><a class="github" href="https://github.com/Ishidawg/ishidawproject">github page</a>.</p>
-        </article>
-        <article class="article">
-            <h1 class="main-title">Youtube and Twitch</h1>
-            <p class="text"><span class="white-mark">I have a youtube and twitch channel, where I upload some content about video games</span>, not all I played and want to play, but some games like: <span class="white-mark">Dark Souls, The Witcher, Dragons Dogma, Star Wars: Jedi Fallen Order and related</span>.</p>
-        </article>
-        <section class="btn-container">
-            <a href="https://www.youtube.com/channel/UCZ9T9OwOAS2Zl7ENTGkKNQA" target="_blank" class="btn yt-btn">Youtube</a>
-            <a href="https://www.twitch.tv/ishidaw" target="_blank" class="btn twitch-btn">Twitch</a>
-        </section>
-    </main>
+    <div id="container"></div>
 </body>
 </html>

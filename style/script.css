@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: #24292e;
+    color: #fff;
+
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+
+    overflow: hidden;
+}
+
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    gap: 1.8em;
+}
+
+.home-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    text-align: center;
+}
+
+.home-text-box h1 {
+    font-size: 2em;
+}
+
+.home-text-box p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.home-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+
+    padding: 0.75em;
+}
+
+.home-icons a {
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.home-icons a:hover {
+    transform: translateY(-2px);
+}
+
+.youtube {
+    transition: filter 0.4s ease;
+}
+
+.youtube:hover {
+    filter: invert(80%) sepia(28%) saturate(5968%) hue-rotate(343deg)
+        brightness(140%) contrast(98%);
+}
+
+.twitch {
+    transition: filter 0.4s ease;
+}
+
+.twitch:hover {
+    filter: invert(80%) sepia(58%) saturate(5615%) hue-rotate(268deg)
+        brightness(85%) contrast(105%);
+}
+
+.github {
+    transition: filter 0.4s ease;
+}
+
+.github:hover {
+    filter: invert(30%) sepia(28%) saturate(5968%) hue-rotate(343deg)
+        brightness(140%) contrast(98%);
+}
