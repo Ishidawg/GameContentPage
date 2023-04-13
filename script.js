@@ -18,7 +18,7 @@ function renderLoad() {
                 <article class="home-text-box">
                     <h1>Ishidaw Vault</h1>
                     <p>
-                        This site have some porpuse: Learn web dev and share my stuff</br>
+                        This site have some purpose: Learn web dev and share my stuff</br>
                         Feel free to use it!</br>
                         Help if you can on github!
                     </p>
