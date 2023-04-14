@@ -115,8 +115,6 @@ body {
 }
 
 .mods-text-box {
-    display: flex;
-    flex-direction: column;
     gap: 0.75em;
     margin-top: 1em;
 
@@ -135,9 +133,8 @@ body {
 .mods-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    gap: 4em;
+    padding: 0.75em;
 }
 
 .mods-div {
@@ -148,15 +145,14 @@ body {
 
 .mods-content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    gap: 0.25em;
+    gap: 0.75em;
 }
 
 .mods-links {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.5em;
 }
 
@@ -177,4 +173,15 @@ body {
 .mods-links a:hover {
     background-color: #d6bd2e;
     transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        overflow: auto;
+    }
+
+    .mods-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
