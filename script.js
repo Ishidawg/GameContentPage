@@ -4,7 +4,7 @@ const home = document.getElementById("home");
 const tweaks = document.getElementById("tweaks");
 const mods = document.getElementById("mods");
 
-function renderLoad() {
+document.addEventListener("DOMContentLoaded", () => {
     content.innerHTML = `
         <!DOCTYPE html>
         <html lang="en">
@@ -38,7 +38,7 @@ function renderLoad() {
         </body>
         </html>
     `;
-}
+});
 
 home.addEventListener("click", () => {
     content.innerHTML = `
