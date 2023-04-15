@@ -103,14 +103,23 @@ mods.addEventListener("click", () => {
                         <div class="mods-content">
                             <h2>HUD</h2>
                             <div class="mods-links">
-                                <a href="https://cf-files.nexusmods.com/cdn/482/1126/Cartoon%20simple%20HUD-1126-1-2-1676252272.7z?md5=j50CWjD1JFzv1yAgxhnfxg&expires=1681423473&user_id=101068653&rip=186.192.233.131">
+                                <a href="https://www.nexusmods.com/darksouls2/mods/1126?tab=files&file_id=3454" target="_blank">
                                     Simple HUD
                                 </a>
-                                <a href="https://cf-files.nexusmods.com/cdn/482/1126/Grayscale%20default%20HUD-1126-1-1-1676008067.7z?md5=k-_3H3sEH_B7iRwZVNpT9g&expires=1681423676&user_id=101068653&rip=186.192.233.131">
+                                <a href="https://www.nexusmods.com/darksouls2/mods/1126?tab=files&file_id=3450" target="_blank">
                                     Grayscale HUD
                                 </a>
                                 <a href="https://www.nexusmods.com/darksouls2/mods/1126?tab=files" target="_blank">
                                     Nexus for more info
+                                </a>
+                            </div>
+                            <h2>RESHADE</h2>
+                            <div class="mods-links">
+                                <a href="https://www.nexusmods.com/darksouls2/mods/1125?tab=files" target="_blank">
+                                    Cinematic
+                                </a>
+                                <a href="https://drive.google.com/file/d/1uVrXCMiG5KV7TDAU2jM2xl7ipbCiLsNt/view?usp=share_link" target="_blank">
+                                    Clarity
                                 </a>
                             </div>
                         </div>
@@ -122,6 +131,23 @@ mods.addEventListener("click", () => {
                             <div class="mods-links">
                                 <a href="https://drive.google.com/u/1/uc?id=1DR7ibnn6rgQzMotnBNcTJzu38uPpPDeA&export=download" target="_blank">
                                     Package
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mods-div">
+                        <h2>Monster Hunter: World</h2>
+                        <div class="mods-content">
+                            <h2>ALL</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1ATnylHOLFCVbaYPn_MCwE00Fj1OcVJDV/view?usp=share_link" target="_blank">
+                                    Package
+                                </a>
+                            </div>
+                            <h2>RESHADE</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1v0p8omwWJldHDu_8w_msA9X-Lra__YiJ/view?usp=share_link" target="_blank">
+                                    Injector DX12
                                 </a>
                             </div>
                         </div>
