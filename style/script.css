@@ -3,7 +3,7 @@
 *, *::after, *::before {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -216,6 +216,84 @@ body {
     
 } */
 
+/* Tweaks */
+
+.tweaks-container {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    gap: 2.5em;
+}
+
+.tweaks-text-box {
+    gap: 0.75em;
+    margin-top: 1em;
+
+    text-align: center;
+}
+
+.tweaks-text-box h1 {
+    font-size: 2em;
+
+    margin-bottom: 0.75rem;
+}
+
+.tweaks-text-box p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.tweaks-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4em;
+    padding: 0.75em;
+
+
+}
+
+.tweaks-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    max-width: 60rem;
+
+    background-color: #2c3843;
+
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+.tweaks-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+
+}
+
+.tweaks-content article {
+    text-align: justify;
+    font-size: 1.12em;
+    line-height: 1.6em;
+
+    padding: 0.75rem;
+
+    text-rendering: optimizeLegibility;
+    text-indent: 2rem;
+}
+
+.tweaks-content article p {
+    padding: 0.75rem;
+}
+
 @media only screen and (max-width: 1268px) {
     body {
         overflow: auto;
@@ -243,5 +321,13 @@ body {
     .mods-links {
         display: flex;
         flex-direction: column;
+    }
+
+    .tweaks-content article {
+        padding: 0.25rem;
+    }
+
+    .tweaks-content article p {
+        padding: 0.25rem;
     }
 }
