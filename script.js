@@ -124,7 +124,6 @@ mods.addEventListener("click", () => {
                             </div>
                         </div>
                     </div>
-                    <hr class="mods-line"></hr>
                     <div class="mods-div">
                         <h2>Payday 2</h2>
                         <div class="mods-content">
@@ -136,7 +135,6 @@ mods.addEventListener("click", () => {
                             </div>
                         </div>
                     </div>
-                    <hr class="mods-line"></hr>
                     <div class="mods-div">
                         <h2>Monster Hunter: World</h2>
                         <div class="mods-content">
