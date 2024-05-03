@@ -1,8 +1,12 @@
 var content = document.getElementById("container");
 
+//Tabs
 const home = document.getElementById("home");
 const tweaks = document.getElementById("tweaks");
 const mods = document.getElementById("mods");
+
+//Filter on Tweaks Settings
+let tweaksFilter = "All"
 
 const homeAndLoad = `
         <!DOCTYPE html>
@@ -47,6 +51,8 @@ home.addEventListener("click", () => {
 });
 
 tweaks.addEventListener("click", () => {
+    let filterValue = "All"
+
     content.innerHTML = `
         <!DOCTYPE html>
         <html lang="en">
@@ -66,6 +72,24 @@ tweaks.addEventListener("click", () => {
                         Tweaks are mostly on .ini game files, nvidia control panel and/or nvidia inspector and minor windows.
                     </p>
                 </article>
+                <div class="filters">
+                    <span>Filters</span>
+                    <div class="buttons filter-buttons">
+                        <input id="filter-btn-1" class="teste" type="button" value="All" />
+                        <input id="filter-btn-2" type="button" value="Windows" />
+                        <input id="filter-btn-3" type="button" value="Games" />
+                    </div>
+                </div>
+    `;
+
+    let allButton = document.getElementById("filter-btn-1");
+    let windowsButton = document.getElementById("filter-btn-2");
+    let gamesButton = document.getElementById("filter-btn-3");
+
+    
+
+
+    content.innerHTML += `
                 <section class="tweaks-section">
                     <div class="tweaks-div">
                         <h2>Windows general tweaks</h2>
@@ -105,6 +129,31 @@ tweaks.addEventListener("click", () => {
                             </article>
                         </div>
                     </div>
+                    <div class="tweaks-div">
+                        <h2>Elden Ring</h2>
+                        <div class="tweaks-content">
+                            <article>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio fugit optio autem deleniti consequatur eveniet, cumque suscipit enim debitis rerum quaerat aperiam voluptas rem illo ut unde nostrum ab.
+                                Doloribus totam distinctio mollitia magni recusandae commodi dolorem, cumque dolorum iure pariatur optio maxime, eos eaque et deleniti obcaecati impedit dicta velit laboriosam neque! Rem officia excepturi animi soluta rerum?
+                                Quidem maxime voluptatum tempore quae harum, omnis similique, et odio nesciunt assumenda veritatis in possimus dicta accusamus amet commodi earum architecto minus eaque quibusdam cumque quasi ducimus! Obcaecati, tempore animi?
+                                Modi beatae eos expedita exercitationem delectus voluptate illo natus, eum omnis blanditiis odio id officia ea eius accusamus rerum vitae tempore similique hic quaerat. Quod, quis. Voluptate dolore non rem.
+                                Quisquam maiores modi eius. Eligendi itaque sapiente quo alias. Tenetur, aperiam ratione. Tempora reiciendis magnam asperiores, quod, veritatis facilis necessitatibus iusto distinctio aliquam quaerat qui assumenda in nulla rerum aut!
+                                Minima hic velit repudiandae alias modi quod maiores sapiente quidem voluptas qui sint, fuga architecto dolores reprehenderit adipisci iure, aut libero suscipit blanditiis laboriosam obcaecati sit aspernatur. Porro, ipsam vel!
+                                A nihil soluta inventore at. Debitis saepe sunt accusantium? Adipisci cupiditate recusandae, possimus asperiores sint sapiente, quas quaerat eum animi a libero voluptas similique quae, ipsum ut iusto officiis praesentium!
+                                </p>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio fugit optio autem deleniti consequatur eveniet, cumque suscipit enim debitis rerum quaerat aperiam voluptas rem illo ut unde nostrum ab.
+                                </p> 
+                                <ul>
+                                    <li>ITEM 1</li>
+                                    <li>ITEM 2</li>
+                                    <li>ITEM 3</li>
+                                    <li>ITEM 4</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
                 </section>
             </main>
         </body>
@@ -126,7 +175,7 @@ mods.addEventListener("click", () => {
                 <article class="mods-text-box">
                     <h1>Mods Section</h1>
                     <p>
-                        Mods you'll find here, also are on <a href="https://www.nexusmods.com/" class="link" target="_blank">Nexus Mods!</a></br>
+                        Some mods that you'll find here, are also on <a href="https://www.nexusmods.com/" class="link" target="_blank">Nexus Mods!</a></br>
                     </p>
                     <p>
                         All authors is credit on README file 💙

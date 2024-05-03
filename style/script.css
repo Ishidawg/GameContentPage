@@ -294,6 +294,47 @@ body {
     padding: 0.75rem;
 }
 
+.filters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.buttons input[type=button]{
+    text-decoration: none;
+    text-shadow: 0.8px 0.8px 1.2px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+
+    border: none;
+
+    color: #fff;
+    /* background-color: #d7a32b; */
+    background-color: #2e7acc;
+
+    border-radius: 0.2em;
+    padding: 0.75em 1em;
+
+    transition: color 0.6s ease, transform 0.4s ease;
+}
+
+.buttons input[type=button]:hover {
+    /* background-color: #d6bd2e; */
+    background-color: #51a4fe;
+    transform: translateY(-2px);
+}
+
+.button-active {
+    background-color: #51a4fe !important;
+}
+
 @media only screen and (max-width: 1268px) {
     body {
         overflow: auto;
