@@ -4,8 +4,7 @@ const home = document.getElementById("home");
 const tweaks = document.getElementById("tweaks");
 const mods = document.getElementById("mods");
 
-document.addEventListener("DOMContentLoaded", () => {
-    content.innerHTML = `
+const homeAndLoad = `
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -37,43 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
             </main>
         </body>
         </html>
-    `;
+`;
+
+document.addEventListener("DOMContentLoaded", () => {
+    content.innerHTML = homeAndLoad;
 });
 
 home.addEventListener("click", () => {
-    content.innerHTML = `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./style/script.css">
-        </head>
-        <body>
-            <main class="home-container">
-                <article class="home-text-box">
-                    <h1>Ishidaw Vault</h1>
-                    <p>
-                        <strong>This site have two porpuse:</strong> Learn web dev and share my stuff.</br>
-                        Feel free to use it!</br>
-                        Help if you can on <a href="https://github.com/Ishidawg/GameContentPage" class="link">Github!</a>
-                    </p>
-                </article>
-                <section class="home-icons">
-                    <a href="https://www.youtube.com/@ishidaw" target="_blank">
-                        <img src="./image/youtube.svg" alt="Youtube" class="youtube">
-                    </a>
-                    <a href="https://www.twitch.tv/ishidaw" target="_blank">
-                        <img src="./image/twitch.svg" alt="Twitch" class="twitch">
-                    </a>
-                    <a href="https://github.com/Ishidawg" target="_blank">
-                        <img src="./image/github.svg" alt="Github" class="github">
-                    </a>
-                </section>
-            </main>
-        </body>
-        </html>
-    `;
+    content.innerHTML = homeAndLoad;
 });
 
 tweaks.addEventListener("click", () => {
@@ -95,6 +65,9 @@ mods.addEventListener("click", () => {
                     <h1>Mods Section</h1>
                     <p>
                         Mods you'll find here, also are on <a href="https://www.nexusmods.com/" class="link" target="_blank">Nexus Mods!</a></br>
+                    </p>
+                    <p>
+                        All authors is credit on README file 💙
                     </p>
                 </article>
                 <section class="mods-section">
@@ -124,7 +97,24 @@ mods.addEventListener("click", () => {
                             </div>
                         </div>
                     </div>
-                    <hr class="mods-line"></hr>
+                    <div class="mods-div">
+                        <h2>Dark Souls 3</h2>
+                        <div class="mods-content">
+                            <h2>ALL</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1ATnylHOLFCVbaYPn_MCwE00Fj1OcVJDV/view?usp=share_link" target="_blank">
+                                    Package
+                                </a>
+                            </div>
+                            <h2>RESHADE</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1v0p8omwWJldHDu_8w_msA9X-Lra__YiJ/view?usp=share_link" target="_blank">
+                                    Injector DX12
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr class="mods-line"></hr> -->
                     <div class="mods-div">
                         <h2>Payday 2</h2>
                         <div class="mods-content">
@@ -136,9 +126,60 @@ mods.addEventListener("click", () => {
                             </div>
                         </div>
                     </div>
-                    <hr class="mods-line"></hr>
+                    <!-- <hr class="mods-line"></hr> -->
                     <div class="mods-div">
                         <h2>Monster Hunter: World</h2>
+                        <div class="mods-content">
+                            <h2>ALL</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1ATnylHOLFCVbaYPn_MCwE00Fj1OcVJDV/view?usp=share_link" target="_blank">
+                                    Package
+                                </a>
+                            </div>
+                            <h2>RESHADE</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1v0p8omwWJldHDu_8w_msA9X-Lra__YiJ/view?usp=share_link" target="_blank">
+                                    Injector DX12
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mods-div">
+                        <h2>Dragon's Dogma: Dark Arisen</h2>
+                        <div class="mods-content">
+                            <h2>ALL</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1ATnylHOLFCVbaYPn_MCwE00Fj1OcVJDV/view?usp=share_link" target="_blank">
+                                    Package
+                                </a>
+                            </div>
+                            <h2>RESHADE</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1v0p8omwWJldHDu_8w_msA9X-Lra__YiJ/view?usp=share_link" target="_blank">
+                                    Injector DX12
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mods-div">
+                        <h2>Dragon's Dogma 2</h2>
+                        <div class="mods-content">
+                            <h2>ALL</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1ATnylHOLFCVbaYPn_MCwE00Fj1OcVJDV/view?usp=share_link" target="_blank">
+                                    Package
+                                </a>
+                            </div>
+                            <h2>RESHADE</h2>
+                            <div class="mods-links">
+                                <a href="https://drive.google.com/file/d/1v0p8omwWJldHDu_8w_msA9X-Lra__YiJ/view?usp=share_link" target="_blank">
+                                    Injector DX12
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mods-div">
+                        <h2>Fallout 76</h2>
                         <div class="mods-content">
                             <h2>ALL</h2>
                             <div class="mods-links">
