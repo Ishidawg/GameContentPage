@@ -245,27 +245,27 @@ let tweaksHeader = content.innerHTML = `
 `;
 
 document.addEventListener("DOMContentLoaded", () => {
+
     content.innerHTML = homeAndLoad;
+    
 });
 
 home.addEventListener("click", () => {
+
     content.innerHTML = homeAndLoad;
+
 });
 
 tweaks.addEventListener("click", () => {
-    //let filterValue = "All"
 
     content.innerHTML = "";
     content.innerHTML = tweaksHeader;
-    content.innerHTML += defaultTweaksPage;
-
-    // allButton.addEventListener("click", () => {
-
-        
+    content.innerHTML += defaultTweaksPage;        
 
 });
 
 function allFilter() {
+
     content.innerHTML = "";
     content.innerHTML = tweaksHeader;
     content.innerHTML += defaultTweaksPage;
