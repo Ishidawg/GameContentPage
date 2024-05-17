@@ -15,6 +15,8 @@ It's my main front-end project, with this I want to learn how to build and maint
 
 ##
 
+**Obs: I know that the way that I wrote this code, is PURE shit... So why do I on this yet? Cuz its just for fun, to create something cool without frameworks and all that...** 
+
 > I'll try to render all content with JS and have one or two HTML page, all vanilla.
 
 
