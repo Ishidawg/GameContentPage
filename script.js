@@ -237,7 +237,7 @@ const tweaksHeader = content.innerHTML = `
         <div class="filters">
             <span>Filters</span>
             <div class="buttons filter-buttons">
-                <input id="filter-btn-1" class="teste" type="button" value="All" onClick="allFilter()" />
+                <input id="filter-btn-1" type="button" value="All" onClick="allFilter()" />
                 <input id="filter-btn-2" type="button" value="Windows" onClick="windowsFilter()" />
                 <input id="filter-btn-3" type="button" value="Games" onClick="gamesFilter()"/>
             </div>
@@ -260,7 +260,13 @@ tweaks.addEventListener("click", () => {
 
     content.innerHTML = "";
     content.innerHTML = tweaksHeader;
-    content.innerHTML += defaultTweaksPage;        
+    content.innerHTML += defaultTweaksPage;
+
+    var allButtonFilter = document.getElementById("filter-btn-1");
+    var windowsButtonFilter = document.getElementById("filter-btn-2");
+    var gamesButtonFilter = document.getElementById("filter-btn-3");
+
+    allButtonFilter.classList.add("button-active");
 
 });
 
@@ -269,6 +275,14 @@ function allFilter() {
     content.innerHTML = "";
     content.innerHTML = tweaksHeader;
     content.innerHTML += defaultTweaksPage;
+
+    var allButtonFilter = document.getElementById("filter-btn-1");
+    var windowsButtonFilter = document.getElementById("filter-btn-2");
+    var gamesButtonFilter = document.getElementById("filter-btn-3");
+
+    allButtonFilter.classList.add("button-active");
+    gamesButtonFilter.classList.remove("button-active");
+    windowsButtonFilter.classList.remove("button-active")
 }
 
 function windowsFilter() {
@@ -276,6 +290,14 @@ function windowsFilter() {
     content.innerHTML = "";
     content.innerHTML = tweaksHeader;
     content.innerHTML += windowsTweaksContent;
+
+    var allButtonFilter = document.getElementById("filter-btn-1");
+    var windowsButtonFilter = document.getElementById("filter-btn-2");
+    var gamesButtonFilter = document.getElementById("filter-btn-3");
+
+    allButtonFilter.classList.remove("button-active");
+    gamesButtonFilter.classList.remove("button-active");
+    windowsButtonFilter.classList.add("button-active")
 }
 
 function gamesFilter() {
@@ -283,6 +305,14 @@ function gamesFilter() {
     content.innerHTML = "";
     content.innerHTML = tweaksHeader;
     content.innerHTML += gamesTweaksContent;
+
+    var allButtonFilter = document.getElementById("filter-btn-1");
+    var windowsButtonFilter = document.getElementById("filter-btn-2");
+    var gamesButtonFilter = document.getElementById("filter-btn-3");
+
+    allButtonFilter.classList.remove("button-active");
+    gamesButtonFilter.classList.add("button-active");
+    windowsButtonFilter.classList.remove("button-active")
 }
 
 mods.addEventListener("click", () => {
