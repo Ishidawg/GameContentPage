@@ -174,7 +174,7 @@ const windowsTweaksContent = content.innerHTML = `
         </html>
 `;
 
-let gamesTweaksContent =  content.innerHTML = `
+const gamesTweaksContent =  content.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">        
 <head>
@@ -215,7 +215,7 @@ let gamesTweaksContent =  content.innerHTML = `
 </html>
 `;
 
-let tweaksHeader = content.innerHTML = `
+const tweaksHeader = content.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -228,7 +228,7 @@ let tweaksHeader = content.innerHTML = `
         <article class="tweaks-text-box">
             <h1>Tweaks Section</h1>
             <p>
-                Here you'll find some tweakd that can make you games run better. I took some tweaks from <a href="https://www.pcgamingwiki.com/wiki/Home" class="link" target="_blank">PCGW!</a></br>
+                Here you'll find some tweaks that can make you games run better. I took some tweaks from <a href="https://www.pcgamingwiki.com/wiki/Home" class="link" target="_blank">PCGW!</a></br>
             </p>
             <p>
                 Tweaks are mostly on .ini game files, nvidia control panel and/or nvidia inspector and minor windows.
@@ -247,7 +247,7 @@ let tweaksHeader = content.innerHTML = `
 document.addEventListener("DOMContentLoaded", () => {
 
     content.innerHTML = homeAndLoad;
-    
+
 });
 
 home.addEventListener("click", () => {
