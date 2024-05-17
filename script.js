@@ -5,8 +5,7 @@ const home = document.getElementById("home");
 const tweaks = document.getElementById("tweaks");
 const mods = document.getElementById("mods");
 
-//Filter on Tweaks Settings
-//let tweaksFilter = "All"
+// aqui ta funfando
 
 const homeAndLoad = `
         <!DOCTYPE html>
